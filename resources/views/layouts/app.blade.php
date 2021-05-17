@@ -46,9 +46,25 @@
   <script type="text/template" id="tmpl-unavailable-variation-template">
     <p>Sorry, this product is unavailable. Please choose a different combination.</p>
   </script>
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+  <link rel="stylesheet" href="{{asset('plugin/bootstrap/css/bootstrap.css')}}">
+  <link rel="stylesheet" href="{{asset('plugin/bootstrap/css/bootstrap-theme.css')}}">
+  <link rel="stylesheet" href="{{asset('fonts/poppins/poppins.css')}}">
+  <link rel="stylesheet" href="{{asset('plugin/fonts/font-awesome/css/font-awesome.min.css')}}">
+  <link rel="stylesheet" href="{{asset('plugin/jquery-ui/jquery-ui.min.css')}}">
+  <link rel="stylesheet" href="{{asset('plugin/process-bar/tox-progress.css')}}">
+  <link rel="stylesheet" href="{{asset('plugin/owl-carouse/owl.carousel.min.css')}}">
+  <link rel="stylesheet" href="{{asset('plugin/owl-carouse/owl.theme.default.min.css')}}">
+  <link rel="stylesheet" href="{{asset('plugin/animsition/css/animate.css')}}">
+  <link rel="stylesheet" href="{{asset('plugin/jquery-ui/jquery-ui.min.css')}}">
+  <link rel="stylesheet" href="{{asset('plugin/mediaelement/mediaelementplayer.css')}}">
+  <link rel="stylesheet" href="{{asset('plugin/datetimepicker/bootstrap-datepicker3.css')}}">
+  <link rel="stylesheet" href="{{asset('plugin/datetimepicker/bootstrap-datetimepicker.min.css')}}">
+  <link rel="stylesheet" href="{{asset('plugin/lightgallery/lightgallery.css')}}">
+  <link rel="stylesheet" href="{{asset('css/style.css')}}">
 </head>
 <body
-  class="page-template-default page page-id-911 woocommerce theme-ornaldo mmm mega_main_menu-2-1-5 woocommerce-no-js yith-wcan-free woo-variation-swatches woo-variation-swatches-theme-ornaldo woo-variation-swatches-theme-child-ornaldo woo-variation-swatches-style-rounded woo-variation-swatches-attribute-behavior-blur woo-variation-swatches-tooltip-enabled woo-variation-swatches-stylesheet-enabled wpb-js-composer js-comp-ver-6.0.5 vc_responsive dokan-theme-ornaldo">
+  class="page-template-default page page-id-911 woocommerce theme-ornaldo mmm mega_main_menu-2-1-5 woocommerce-no-js yith-wcan-free woo-variation-swatches woo-variation-swatches-theme-ornaldo woo-variation-swatches-theme-child-ornaldo woo-variation-swatches-style-rounded woo-variation-swatches-attribute-behavior-blur woo-variation-swatches-tooltip-enabled woo-variation-swatches-stylesheet-enabled wpb-js-composer js-comp-ver-6.0.5 ">
 @include('layouts.ftc-mobile-wrapper')
 <div id="page" class="site">
   @include('layouts.header')
@@ -228,6 +244,34 @@
 <script type="text/javascript" src="{{ asset('vendor/carousel/owl.carousel.min.js') }}"></script>
 <script src="{{asset('wp-content/cache/min/1/4873e279344e0e0189c9800fc215b310.js')}}" data-minify="1"></script>
 <script type="text/javascript" src="{{asset('/js/app.js')}}"></script>
+
+<script src="{{asset('plugin/jquery/jquery-2.0.2.min.js')}}"></script>
+<script src="{{asset('plugin/jquery-ui/jquery-ui.min.js')}}"></script>
+<script src="{{asset('plugin/bootstrap/js/bootstrap.js')}}"></script>
+<script src="{{asset('plugin/process-bar/tox-progress.js')}}"></script>
+<script src="{{asset('plugin/waypoint/jquery.waypoints.min.js')}}"></script>
+<script src="{{asset('plugin/counterup/jquery.counterup.min.js')}}"></script>
+<script src="{{asset('plugin/owl-carouse/owl.carousel.min.js')}}"></script>
+<script src="{{asset('plugin/jquery-ui/jquery-ui.min.js')}}"></script>
+<script src="{{asset('plugin/mediaelement/mediaelement-and-player.js')}}"></script>
+<script src="{{asset('plugin/masonry/masonry.pkgd.min.js')}}"></script>
+<script src="{{asset('plugin/datetimepicker/moment.min.js')}}"></script>
+<script src="{{asset('plugin/datetimepicker/bootstrap-datepicker.min.js')}}"></script>
+<script src="{{asset('plugin/datetimepicker/bootstrap-datepicker.tr.min.js')}}"></script>
+<script src="{{asset('plugin/datetimepicker/bootstrap-datetimepicker.js')}}"></script>
+<script src="{{asset('plugin/datetimepicker/bootstrap-datetimepicker.fr.js')}}"></script>
+
+<script src="{{asset('plugin/lightgallery/picturefill.min.js')}}"></script>
+<script src="{{asset('plugin/lightgallery/lightgallery.js')}}"></script>
+<script src="{{asset('plugin/lightgallery/lg-pager.js')}}"></script>
+<script src="{{asset('plugin/lightgallery/lg-autoplay.js')}}"></script>
+<script src="{{asset('plugin/lightgallery/lg-fullscreen.js')}}"></script>
+<script src="{{asset('plugin/lightgallery/lg-zoom.js')}}"></script>
+<script src="{{asset('plugin/lightgallery/lg-hash.js')}}"></script>
+<script src="{{asset('plugin/lightgallery/lg-share.js')}}"></script>
+<script src="{{asset('plugin/sticky/jquery.sticky.js')}}"></script>
+
+<script src="{{asset('js/main.js')}}"></script>
 @yield('js-import')
 </body>
 </html>

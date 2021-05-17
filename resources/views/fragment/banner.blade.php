@@ -1,5 +1,5 @@
 <div
-  data-bg="url({{ get_dynamic_image($dynamic_images, $f_image_code, 'default_banner.png')  }})"
+  data-bg="url('https://aighospitals.com/wp-content/uploads/2018/08/Banner-Doctors.png')"
   class="ftc-breadcrumb rocket-lazyload" style=""
 >
   <div class="container">

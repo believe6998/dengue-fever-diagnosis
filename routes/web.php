@@ -24,6 +24,8 @@ Route::name('client.')->group(function () {
 
   Route::get('/home', 'HomeController@index')->name('home');
 
+  Route::get('/diagnose', 'DiagnoseController@index')->name('index');
+
   Route::name('products.')->prefix('/products')->group(function () {
     Route::get('/', 'ProductController@index')->name('list');
     Route::get('/{slug}', 'ProductController@detail')->name('detail');

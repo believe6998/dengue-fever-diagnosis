@@ -98,7 +98,7 @@
               <a title="" target="_blank" href="index-options=0-1-3.html#">
                 <img
                   loading="lazy" alt="" title="" class="img"
-                  src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
+                  src="https://i.pinimg.com/originals/33/e0/c5/33e0c5ff9c271eb7bfeb0fe7b0b91d68.jpg"
                   data-lazy-src="https://demo.themeftc.com/ornaldo/wp-content/uploads/2017/12/img-widget.jpg"
                 >
               </a>

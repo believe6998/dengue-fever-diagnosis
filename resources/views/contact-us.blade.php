@@ -19,21 +19,21 @@
                         <div class="info_contact">
                           <div class="info_column address">
                             <ul>
-                              <li>Số 206, đường Nông Lâm, Phường Đức Thắng, Quận Bắc Từ Liêm, Hà Nội</li>
+                              <li>236 Hoàng Quốc Việt, Cổ Nhuế, Bắc Từ Liêm, Hà Nội</li>
                             </ul>
                           </div>
                           <div class="info_column phone">
                             <ul>
-                              <li>Phone: 0373 864 493</li>
+                              <li>Phone: 0793 245 698</li>
                             </ul>
                           </div>
                           <div class="info_column email">
                             <ul>
                               <li>Email:
-                                <a href="mailto:cskh.gosport@gmail.com">cskh.gosport@gmail.com</a>
+                                <a href="mailto:MTA@gmail.com">MTA@gmail.com</a>
                               </li>
                               <li>Web:
-                                <a href="{{url('/home')}}">GoSport</a>
+                                <a href="{{url('/home')}}">MTA</a>
                               </li>
                             </ul>
                           </div>
@@ -50,7 +50,7 @@
                 <div class="contact_form wpb_column vc_column_container vc_col-sm-6">
                   <div class="wpb_wrapper">
                     <div role="form" class="wpcf7" id="wpcf7-f9-p801-o1" lang="vi-VN" dir="ltr">
-                      <h3 style="text-align: center; margin: 6px">ĐỂ LẠI LỜI NHẮN CHO CHÚNG TÔI</h3>
+                      <h3 style="text-align: center; margin: 6px">ĐĂNG KÝ TƯ VẤN</h3>
                       <div class="screen-reader-response">
                         @isset($success)
                           {{$success}}
@@ -100,7 +100,7 @@
                             <span class="wpcf7-form-control-wrap your-message">
                               <textarea
                                 name="content" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea"
-                                placeholder="Nội dung*" required
+                                placeholder="Triệu chứng*" required
                               >{{old('content')}}</textarea>
                               <span class="text-danger">{{$errors->first('content')}}</span>
                             </span>

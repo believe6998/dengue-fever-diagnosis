@@ -11,14 +11,14 @@
               <a href="{{url('/')}}">
                 <img
                   loading="lazy"
-                  src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
+                  src="https://www.butler.org/hs-fs/hubfs/-%20BUTLER/ButlerHospital_Logo_Color.png?width=1500&name=ButlerHospital_Logo_Color.png"
                   alt="Go Sport" title="Go Sport"
                   class="normal-logo"
-                  data-lazy-src="{{URL::asset('/logo/logo.jpg')}}"
+                  data-lazy-src="https://www.butler.org/hs-fs/hubfs/-%20BUTLER/ButlerHospital_Logo_Color.png?width=1500&name=ButlerHospital_Logo_Color.png"
                 />
                 <noscript>
                   <img
-                    src="{{URL::asset('/logo/logo.jpg')}}" alt="Go Sport" title="Go Sport"
+                    src="https://www.butler.org/hs-fs/hubfs/-%20BUTLER/ButlerHospital_Logo_Color.png?width=1500&name=ButlerHospital_Logo_Color.png" alt="Go Sport" title="Go Sport"
                     class="normal-logo"
                   />
                 </noscript>
@@ -30,32 +30,17 @@
               <a href="{{url('/')}}">
                 <img
                   loading="lazy"
-                  src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
+                  src="https://www.butler.org/hs-fs/hubfs/-%20BUTLER/ButlerHospital_Logo_Color.png?width=1500&name=ButlerHospital_Logo_Color.png"
                   alt="Go Sport" title="Go Sport" class="normal-logo-mobile"
-                  data-lazy-src="{{URL::asset('/logo/logo.jpg')}}"
+                  data-lazy-src="https://www.butler.org/hs-fs/hubfs/-%20BUTLER/ButlerHospital_Logo_Color.png?width=1500&name=ButlerHospital_Logo_Color.png"
                 />
                 <noscript>
                   <img
-                    src="{{URL::asset('/logo/logo.jpg')}}"
+                    src="https://www.butler.org/hs-fs/hubfs/-%20BUTLER/ButlerHospital_Logo_Color.png?width=1500&name=ButlerHospital_Logo_Color.png"
                     alt="Go Sport" title="Go Sport" class="normal-logo-mobile"
                   />
                 </noscript>
               </a>
-            </div>
-          </div>
-          <div class="right-content">
-            <div class="ftc-shop-cart search-shop-hidden">
-              <div class="ftc-tini-cart">
-                <div class="cart-item">
-                  <a class="ftc-cart-tini und-cart-tini">
-                    <div class="cart-number">0</div>
-                    <div class="cart-total">Rỗng</div>
-                    <div class="my-cart">Rỏ hàng:
-                      <div class="price-total">$0.00</div>
-                    </div>
-                  </a>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -81,8 +66,8 @@
                       </li>
                       <li
                         class="menu-item menu-item-type-post_type menu-item-object-page {{ Request::is('products') ? 'current-menu-ancestor current_page_ancestor' : '' }} menu-item-has-children menu-item-4014 multicolumn_dropdown default_style drop_to_right submenu_default_width columns3">
-                        <a href="{{url('/products')}}" class="item_link  disable_icon" tabindex="100"><i class=""></i>
-                          <span class="link_content"> <span class="link_text"> Cửa hàng </span> </span>
+                        <a href="{{url('/diagnose')}}" class="item_link  disable_icon" tabindex="100"><i class=""></i>
+                          <span class="link_content"> <span class="link_text"> Hỗ trợ khách hàng </span> </span>
                         </a>
                         <ul class="mega_dropdown">
                           @foreach($share_categories as $category)
@@ -116,7 +101,7 @@
                       <li
                         class="menu-item menu-item-type-post_type menu-item-object-page {{ Request::is('blog') ? 'current-menu-ancestor current_page_ancestor' : '' }} menu-item-has-children menu-item-5629 multicolumn_dropdown default_style drop_to_right submenu_default_width columns2">
                         <a href="{{url('/blog')}}" class="item_link  disable_icon" tabindex="123"><i class=""></i>
-                          <span class="link_content"> <span class="link_text"> Blog </span> </span>
+                          <span class="link_content"> <span class="link_text"> Tin tức </span> </span>
                         </a>
                       </li>
                       <li
@@ -125,30 +110,11 @@
                           <span class="link_content"> <span class="link_text"> Liên hệ </span> </span>
                         </a>
                       </li>
-                      <li
-                        class="menu-item menu-item-type-post_type menu-item-object-page {{ Request::is('about-us') ? 'current-menu-ancestor current_page_ancestor' : '' }} menu-item-has-children menu-item-5629 multicolumn_dropdown default_style drop_to_right submenu_default_width columns2">
-                        <a href="{{url('/about-us')}}" class="item_link  disable_icon" tabindex="123"><i class=""></i>
-                          <span class="link_content"> <span class="link_text"> Về chúng tôi </span> </span>
-                        </a>
-                      </li>
                     </ul>
                   </div>
                 </div>
               </div>
             </nav>
-          </div>
-        </div>
-        <div class="ftc-shop-cart search-shop-visible">
-          <div class="ftc-tini-cart">
-            <div class="cart-item">
-              <a class="ftc-cart-tini und-cart-tini">
-                <div class="cart-number">0</div>
-                <div class="cart-total"> Rỗng</div>
-                <div class="my-cart"> Giỏ hàng:
-                  <div class="price-total">$0.00</div>
-                </div>
-              </a>
-            </div>
           </div>
         </div>
       </div>

@@ -63,11 +63,11 @@
                       <li>
                         <i class="fa fa-map-marker"></i>Địa chỉ:
                         <span class="footer-info">
-                          Số 206 - Đường Nông Lâm - Phường Đức Thắng - Quận Bắc Từ Liêm - Hà Nội
+                          236 Hoàng Quốc Việt, Cổ Nhuế, Bắc Từ Liêm, Hà Nội
                         </span>
                       </li>
                       <li>
-                        <i class="fa fa-phone"></i>Điện thoại: <span class="footer-info">0373.864.493</span>
+                        <i class="fa fa-phone"></i>Điện thoại: <span class="footer-info">0793.245.698</span>
                       </li>
                       <li>
                         <i class="fa fa-clock-o"></i>
@@ -86,10 +86,9 @@
                   <h4 class="widget-title heading-title">Site map</h4>
                   <ul class="no-padding bullet">
                     <li><a href="{{url('/')}}">Trang chủ</a></li>
-                    <li><a href="{{url('/products')}}">Cửa hàng</a></li>
-                    <li><a href="{{url('/blog')}}">Blog</a></li>
+                    <li><a href="{{url('/diagnose')}}">Tư vấn</a></li>
+                    <li><a href="{{url('/blog')}}">Tin tức</a></li>
                     <li><a href="{{url('/contact-us')}}">Liên hệ</a></li>
-                    <li><a href="{{url('/about-us')}}">Về chúng tôi</a></li>
                   </ul>
                 </div>
               </div>
