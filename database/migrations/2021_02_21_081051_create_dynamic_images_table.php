@@ -1,0 +1,40 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class CreateDynamicImagesTable extends Migration
+{
+  /**
+   * Run the migrations.
+   *
+   * @return void
+   */
+  public function up()
+  {
+    Schema::create('dynamic_images', function (Blueprint $table) {
+      $table->id();
+      $table->string('code');
+      $table->string('image');
+      $table->string('url_go_to')->nullable();
+      $table->string('url_title')->nullable();
+      $table->string('text1')->nullable();
+      $table->string('text2')->nullable();
+      $table->string('text3')->nullable();
+      $table->string('title');
+      $table->tinyInteger('status')->default(0);
+      $table->timestamps();
+    });
+  }
+
+  /**
+   * Reverse the migrations.
+   *
+   * @return void
+   */
+  public function down()
+  {
+    Schema::dropIfExists('dynamic_images');
+  }
+}
