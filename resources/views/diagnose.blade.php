@@ -8,13 +8,54 @@
         tích chọn những triệu chứng mà bạn gặp phải
       </div>
       <div class="card">
-        <div class="card-body" style="background-color: white">
-          <div class="row" id="list" style="padding-left: 250px">
+        <div class="card-body" style="background-color: white; border-radius: 15px">
+          <div id="start">
+            <div class="row" id="list" style="padding-left: 250px">
+            </div>
+            <div class="d-flex justify-content-center row">
+              <button class="btn btn-primary col-2 mt-4" id="btn-next">Hoàn thành</button>
+            </div>
+          </div>
+          <div class="d-none" id="nothing">
+            <div class="text-primary text-center mb-3" style="font-weight: bold; font-size: 18px">
+              Không đủ dữ liệu để chuẩn đoán
+            </div>
+          </div>
+          <div class="d-none" id="good">
+            <div class="text-success text-center mb-3" style="font-weight: bold; font-size: 18px">
+              Bạn không bị sốt xuất huyết
+            </div>
+          </div>
+          <div class="d-none" id="medium">
+            <div class="text-warning text-center mb-3" style="font-weight: bold; font-size: 18px">
+              Rất có thể bạn đang bị sốt xuất huyết giai đoạn đầu
+            </div>
+            <div style="font-weight: bold;padding-bottom: 10px">Bạn nên đến bệnh viện khám nếu có thể.</div>
+            <div style="font-weight: bold">Gợi ý điều trị:</div>
+            <div style="padding: 10px">
+              <div>- Nếu sốt cao ≥ 39 độ, cho thuốc hạ nhiệt, nới lỏng quần áo và lau mát bằng nước ấm.</div>
+              <div>- Thuốc hạ nhiệt chỉ được dùng là Paracetamol đơn chất, liều dùng từ 10 - 15 mg/kg cân nặng/lần, cách
+                nhau mỗi 4-6 giờ.
+              </div>
+            </div>
+            <div style="font-weight: bold">Chú ý:</div>
+            <div style="padding: 10px">
+              <div>- Tổng liều Paracetamol không quá 60mg/kg cân nặng/24h.</div>
+              <div>- Không dùng aspirin (acetyl salicylic acid), analgin, để điều trị vì có thể gây xuất huyết, toan
+                máu.
+              </div>
+              <div>- Bù dịch sớm bằng đường uống: Khuyến khích người bệnh uống nhiều nước Oresol hoặc nước sôi để nguội,
+                nước trái cây (nước dừa, cam, chanh, …) hoặc nước cháo loãng với muối.
+              </div>
+            </div>
+          </div>
+          <div class="d-none" id="bad">
+            <div class="text-danger text-center mb-3" style="font-weight: bold; font-size: 18px">
+              Rất có thể bạn đang bị sốc sốt xuất huyết và ở giai đoạn nguy hiểm của bệnh. Hay đến ngay cơ ở y tế gần
+              nhất để xét nghiệm và chữa trị kịp thời !!!!!
+            </div>
           </div>
         </div>
-      </div>
-      <div class="d-flex justify-content-center row">
-        <button class="btn btn-primary col-2 mt-4" id="btn-next">Tiếp tục</button>
       </div>
     </div>
     {{-- CONTENT END --}}
@@ -101,23 +142,47 @@
       }
       $('#list').html(content)
 
-      function contains(target, pattern) {
-        let value = 0;
-        pattern.forEach(function (word) {
-          value = value + target.includes(word);
-        });
-        return (value === 1)
+      let compare = async (a1, a2) => a1.reduce((a, c) => a + a2.includes(c), 0);
+
+      function inArray(needle, haystack, matchAll = false) {
+        if (matchAll) {
+          return needle.every(i => haystack.includes(i));
+        } else {
+          return needle.some(i => haystack.includes(i));
+        }
       }
 
+      let status = 0
       let rs = []
-      $('#btn-next').click(function () {
+      $('#btn-next').click(async function () {
         $('input[name="item"]:checked').each(function () {
           rs.push(parseInt(this.value))
         })
-        let presents = _.intersectionWith(rs, [0, 2, 3, 4, 5, 6], _.isEqual);
-        let dif = _.differenceWith(rs, [0, 2, 3, 4, 5, 6], _.isEqual);
-        console.log(presents)
-        console.log(dif)
+        let type1 = await compare(rs, [0, 2, 3, 4, 5, 6, 7, 8, 9])
+        if (type1 > 7) {
+          status = 1
+        } else if (type1 >= 3 && type1 <= 7 && await inArray([0, 4, 6], rs, true)) {
+          status = 1
+        }
+
+
+        let type2 = await compare(rs, [10, 11, 12, 13, 14, 15])
+
+        if (type2 >= 4) {
+          status = 2
+        }
+        $('#start').addClass('d-none')
+        if (rs.length <= 2) {
+          $('#nothing').removeClass('d-none')
+        } else {
+          if (status === 0) {
+            $('#good').removeClass('d-none')
+          } else if (status === 1) {
+            $('#medium').removeClass('d-none')
+          } else {
+            $('#bad').removeClass('d-none')
+          }
+        }
       })
     })
 

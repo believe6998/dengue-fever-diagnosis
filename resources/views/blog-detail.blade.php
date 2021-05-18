@@ -5,8 +5,8 @@
     @include('fragment.banner', [
     'f_image_code' => 'banner_blog_detail',
     'f_title'=> $article ? $article->title : '',
-    'f_parent_url' => '/products',
-    'f_parent_title' => 'Cửa hàng',
+    'f_parent_url' => '/blog',
+    'f_parent_title' => 'Tin tức',
     'f_children_title'=> $article ? $article->title : ''
     ])
     {{-- BANNER END --}}

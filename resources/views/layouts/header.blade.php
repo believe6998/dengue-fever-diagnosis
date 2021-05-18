@@ -12,7 +12,7 @@
                 <img
                   loading="lazy"
                   src="https://www.butler.org/hs-fs/hubfs/-%20BUTLER/ButlerHospital_Logo_Color.png?width=1500&name=ButlerHospital_Logo_Color.png"
-                  alt="Go Sport" title="Go Sport"
+                  alt="MTA Hospital" title="MTA Hospital"
                   class="normal-logo"
                   data-lazy-src="https://www.butler.org/hs-fs/hubfs/-%20BUTLER/ButlerHospital_Logo_Color.png?width=1500&name=ButlerHospital_Logo_Color.png"
                 />

@@ -2,7 +2,7 @@
 @section('content')
   <div id="content" class="site-content">
     {{-- BANNER --}}
-    @include('fragment.banner', ['f_image_code' => 'banner_blogs', 'f_title'=>'Blogs', 'f_children_title'=>'Blogs'])
+    @include('fragment.banner', ['f_image_code' => 'banner_blogs', 'f_title'=>'Blogs', 'f_children_title'=>'Tin tức'])
     {{-- BANNER END --}}
     {{-- CONTENT --}}
     <div class="container">
