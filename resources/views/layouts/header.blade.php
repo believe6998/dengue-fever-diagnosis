@@ -66,7 +66,7 @@
                       </li>
                       <li
                         class="menu-item menu-item-type-post_type menu-item-object-page {{ Request::is('products') ? 'current-menu-ancestor current_page_ancestor' : '' }} menu-item-has-children menu-item-4014 multicolumn_dropdown default_style drop_to_right submenu_default_width columns3">
-                        <a href="{{url('/diagnose')}}" class="item_link  disable_icon" tabindex="100"><i class=""></i>
+                        <a href="" class="item_link  disable_icon" tabindex="100"><i class=""></i>
                           <span class="link_content"> <span class="link_text"> Hỗ trợ khách hàng </span> </span>
                         </a>
                         <ul class="mega_dropdown">
@@ -74,7 +74,7 @@
                             <li
                               class="sub-style menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-has-children menu-item-3739 default_dropdown default_style drop_to_right submenu_default_width columns1"
                               style="width:33.333333333333%;">
-                              <a href="/products?category={{$category['id']}}" class="item_link  disable_icon"
+                              <a href="/diagnose" class="item_link  disable_icon"
                                  tabindex="101"><i class=""></i>
                                 <span
                                   class="link_content"> <span class="link_text">{{$category['name']}} </span> </span>
@@ -84,7 +84,7 @@
                                   @foreach($category['children'] as $sub_category)
                                     <li
                                       class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3740 default_dropdown default_style drop_to_right submenu_default_width columns1">
-                                      <a href="/products?category={{$sub_category['id']}}"
+                                      <a href="/diagnose"
                                          class="item_link  disable_icon"
                                          tabindex="102"><i class=""></i>
                                         <span class="link_content"> <span
